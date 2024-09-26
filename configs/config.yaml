@@ -1,0 +1,32 @@
+model:
+  learner_model_name: "LLaMA-3.2-3B"  
+  expert_model_name: "LLaMA-3.2-3B"   
+  finetuned_model_path: "models/finetuned_model"
+
+dataset:
+  processed_data: "data/processed"
+  train_split: "train.json"
+  val_split: "val.json"
+  test_split: "test.json"
+
+training:
+  num_epochs: 5
+  learning_rate: 1.41e-5
+  batch_size: 8
+  mini_batch_size: 4
+  num_mini_batch: 2
+  ppo_epochs: 4
+  max_length: 150
+  num_beams: 5
+  temperature: 1.0
+  save_every: 1
+  evaluate_every: 1
+  outputs_dir: "outputs/metrics"
+
+reward:
+  model_name: "all-MiniLM-L6-v2"
+  device: "cuda"
+
+logging:
+  log_with: "tensorboard"
+  log_dir: "logs/"
