@@ -1,2 +1,5 @@
-# nlp_rl_ei_project
-Im gonna use Expert Iteration (EI) cus  it refines the model's performance by repeatedly generating solutions, selecting the best ones
+## Project Overview
+
+This project implements **Expert Iteration (EI)** on a mathematical dataset
+
+im goona use this dataset GSM8K i might change it 
